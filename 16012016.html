@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>RP15 Working!</title>
+    <script src="https://code.jquery.com/jquery-2.1.1.js"></script>
+<style>
+.displayBox {
+  border: 1px solid #000;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  /* rewrite to just use margin */
+  padding: 30px;
+}
+</style>
+  </head>
+  <body>
+
+
+<p class = "2">here is the P2:
+</p>
+    <script>
+
+
+var str = "one*two*three"
+var arr = str.split('*')
+var new_str = arr.join(' and a ')
+
+// now our turn...
+var scrambled_poem = "roses red are bacon crispy i bacon love and is blue violets are"
+var array = scrambled_poem.split(' ')
+
+console.log(array);
+//http://www.w3schools.com/jsref/jsref_push.asp
+
+/*var i = 0 
+while (i<array.length) {
+shit1 = array.shift()
+unscrambled_array.push()
+shit2 = array.pop()
+unscrambled_array.push()
+i++
+
+    }
+
+var unscrambled_array
+unscrambled_array.join(' ')
+
+$('.2').append(unscrambled_array);
+*/
+/*
+
+var scrambled_poem = "roses red are bacon crispy i bacon love and is blue violets are"
+
+var descrambling = function (message, page) {
+    var array_of_splits = message.split(' ')
+        var unscrambled_message = []
+    var count = 0
+    while (array_of_splits.length) {
+     
+        unscrambled_message.push(array_of_splits.shift())
+        // (condition) ? if_true : if_false
+        unscrambled_message.push((array_of_splits.length)?array_of_splits.pop():'')
+        count++
+        }
+        var joined = unscrambled_message.join(' ')
+        $(page).append(joined);
+    }
+    
+
+descrambling(scrambled_poem,'.2');
+*/
+
+
+
+var reverser = function (array) {
+var len = array.length
+var i = 0
+var lol = []
+
+while (i<len) {
+
+lol.push(array.pop())
+i++
+}
+return lol
+}
+
+var backwards = []
+function FirstReverse(array) {
+    for( var i <= 1; i < array.length; i++) {
+        backwards.push(array[array.length - i ])
+        }
+        return backwards
+    };
+    var myArray = ["element one", "element two", "element three"]
+    FirstReverse(myArray)
+
+    </script>
+
+  </body>
+</html>
